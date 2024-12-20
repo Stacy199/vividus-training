@@ -1,1 +1,10 @@
+Composite: When navigate to the website homepage
+Given I am on main application page
+When I wait until element located by `xpath(//div[text()='Swag Labs'])` appears
+Then the page with the URL 'https://www.saucedemo.com/' is loaded
+When I take screenshot
 
+Composite: When I login as a Good User with email `${swagGoodUserName}` and password `${swagPassword}`
+When I enter `<swagGoodUserName>` in field located by `xpath(//*[@id="user-name"])`
+When I enter `<swagPassword>` in field located by `xpath(//*[@id="password"])`
+When I click on element located by `xpath(//*[@id="login-button"])`
