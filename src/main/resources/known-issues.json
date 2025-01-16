@@ -1,2 +1,14 @@
 {
+    "BUG-001": {
+        "type": "Internal",
+        "assertionPattern": ".*Expected: \"https:\\/\\/www.saucedemo.com\\/inventory.html\" Actual: was \"https:\\/\\/www.saucedemo.com\\/\".*",
+        "scenarioPattern": "Log in as a Locked User Name",
+        "stepPattern": "Then \\`\\$\\{current-page-url\\}\\` is equal to \\`https:\\/\\/www.saucedemo.com\\/inventory.html\\`"
+    },
+    "BUG-002": {
+        "type": "Internal",
+        "assertionPattern": ".*Expected: number of elements is a value equal to \\<6\\> Actual: \\<0\\>.*",
+        "scenarioPattern": "Log in as a Locked User Name",
+        "stepPattern": "Then number of elements found by \\`xpath\\(//div\\[@class='inventory_item'\\]\\)\\` is equal to \\`6\\`"
+    }
 }
