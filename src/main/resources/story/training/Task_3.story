@@ -9,19 +9,19 @@ When I take screenshot
 
 Scenario: Log in as a Locked User Name
 When navigate to the website homepage
-When I login as a Good User with email `${swagLockedUserName}` and password `${swagPassword}`
+When I login as a Locked User Name with email `${swagLockedUserName}` and password `${swagPassword}`
 Then number of elements found by `xpath(//div[@class='inventory_item'])` is equal to `6`
 When I take screenshot
 
 Scenario: Log in as a Broken User Name
 When navigate to the website homepage
-When I login as a Good User with email `${swagBrokenUserName}` and password `${swagPassword}`
+When I login as a Broken User Name with email `${swagBrokenUserName}` and password `${swagPassword}`
 Then number of elements found by `xpath(//div[@class='inventory_item'])` is equal to `6`
 When I take screenshot
 
 Scenario: Log in as a Slow User Name
 When navigate to the website homepage
-When I login as a Good User with email `${swagSlowUserName}` and password `${swagPassword}`
+When I login as a Slow User Name with email `${swagSlowUserName}` and password `${swagPassword}`
 Then number of elements found by `xpath(//div[@class='inventory_item'])` is equal to `6`
 When I take screenshot
 
