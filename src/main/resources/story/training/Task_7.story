@@ -56,5 +56,3 @@ When I click on element located by `xpath(//*[@id="finish"])`
 When I save text of element located by `xpath(//h2[@class='complete-header'])` to scenario variable `ThankYouText`
 Given I initialize scenario variable `expectedThankYouText` with value `#{loadResource(/data/message.txt)}`
 Then `#{eval('${ThankYouText}' == '${expectedThankYouText}')}` is equal to `true`
-
-
