@@ -1,2 +1,8 @@
 {
+  "BUG-001": {
+    "type": "Internal",
+    "assertionPattern": ".*Expected: \"true\" Actual: was \"false\".*",
+    "scenarioPattern": "Validate order summary and complete order.*"
+  }
 }
+
